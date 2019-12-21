@@ -1,7 +1,7 @@
 
 python encode_image.py   --src_im sample.png --iteration 500
 
-python image_morphing.py --latent_file  latent_W/0.npy latent_W/sample.npy
+python image_morphing.py --latent_file1 latent_W/0.npy --latent_file2 latent_W/sample.npy
 
 python make_morphgif.py
 
