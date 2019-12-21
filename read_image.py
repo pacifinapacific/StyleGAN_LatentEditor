@@ -14,7 +14,7 @@ def image_reader(img_path,resize=None):
     ])
 
     image = transform(image)
-    print(image)
+
 
     image=image.unsqueeze(0)
 
