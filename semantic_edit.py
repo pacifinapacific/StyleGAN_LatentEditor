@@ -20,7 +20,7 @@ def main():
         parser = argparse.ArgumentParser(description='Find latent representation of reference images using perceptual loss')
         parser.add_argument('--batch_size', default=1, help='Batch size for generator and perceptual model', type=int)
         parser.add_argument('--resolution',default=1024,type=int)
-        parser.add_argument('--weight_file',default="weight_files/pytorch/ffhq.pt",type=str)
+        parser.add_argument('--weight_file',default="weight_files/pytorch/karras2019stylegan-ffhq-1024x1024.pt",type=str)
         parser.add_argument('--latent_file',default="latent_W/0.npy")
 
 
@@ -55,13 +55,13 @@ def main():
         for i in range(5):
             latents_0=np.load(args.latent_file)
             latents_0=torch.tensor(latents_0).to(device)#.unsqueeze(0)
-            boundary=np.load("boundary/"+boundary_name[i])
-            make_morph(boundary,i,latents_0,g_synthesis)
+            boundary=np.load("boundaries/"+boundary_name[i])
+            make_morph(boundary,i,latents_0,g_synthesis,semantic)
 
 
 
          
-def make_morph(boundary,i,latents_0,g_synthesis):
+def make_morph(boundary,i,latents_0,g_synthesis,semantic):
         boundary=boundary.reshape(1,1,-1)
 
 
