@@ -16,28 +16,3 @@ https://github.com/lernapparat/lernapparat
 
 詳しくは以下のqiita記事を参照してください
 https://qiita.com/pacifinapacific/private/1d6cca0ff4060e12d336
-# test
-```
-git clone https://github.com/foolwood/SiamMask.git && cd SiamMask
-export SiamMask=$PWD
-```
-
-```bash
-python encode_image.py   --src_im sample.png --iteration 500
-```
-
-```bash
-python image_morphing.py --latent_file1 latent_W/0.npy --latent_file2 latent_W/sample.npy
-```
-```bash
-python make_morphgif.py
-```
-```bash
-python image_crossover.py --src_im1  source_image/joker.png --src_im2  source_image/0.png --mask source_image/Blur_mask.png --iteration 1500
-```
-```bash
-python facial_exchange.py --src_im1  source_image/sample.png --src_im2  source_image/0.png  --iteration 500
-```
-```bash
-python semantic_edit.py --latent_file  latent_W/0.npy
-```
