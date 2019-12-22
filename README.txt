@@ -1,3 +1,4 @@
+# StyleGAN Image to Latent
 このリポジトリは以下の論文の非公式かつ部分的な実装です。
 
 Abdal, R., Qin, Y., & Wonka, P. (2019). Image2StyleGAN: How to Embed Images Into the StyleGAN Latent Space? Retrieved from http://arxiv.org/abs/1904.03189 ↩
