@@ -17,9 +17,11 @@ https://github.com/lernapparat/lernapparat
 詳しくは以下のqiita記事を参照してください
 https://qiita.com/pacifinapacific/private/1d6cca0ff4060e12d336
 
-'''
+```
 python encode_image.py   --src_im sample.png --iteration 500
-'''
+
+```
+
 ```
 python image_morphing.py --latent_file1 latent_W/0.npy --latent_file2 latent_W/sample.npy
 ```
