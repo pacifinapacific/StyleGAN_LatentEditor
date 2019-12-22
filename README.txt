@@ -17,6 +17,11 @@ https://github.com/lernapparat/lernapparat
 詳しくは以下のqiita記事を参照してください
 https://qiita.com/pacifinapacific/private/1d6cca0ff4060e12d336
 
+```
+git clone https://github.com/foolwood/SiamMask.git && cd SiamMask
+export SiamMask=$PWD
+```
+
 ```bash
 python encode_image.py   --src_im sample.png --iteration 500
 ```
