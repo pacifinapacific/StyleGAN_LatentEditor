@@ -14,6 +14,5 @@ https://github.com/NVlabs/stylegan
 
 さらにpretrainedモデルをtensorflowからpytorchに移植する際、以下のリポジトリ内のコードを使用しています。
 https://github.com/lernapparat/lernapparat
-
 詳しくは以下のqiita記事を参照してください
-https://qiita.com/pacifinapacific/private/1d6cca0ff4060e12d336
+https://qiita.com/pacifinapacific/items/1d6cca0ff4060e12d336
