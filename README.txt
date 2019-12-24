@@ -1,5 +1,5 @@
 
-このリポジトリは以下の論文の非公式かつ部分的な実装です。
+## このリポジトリは以下の論文の非公式かつ部分的な実装です。
 This repository is an informal and partial implementation of the following paper.
 
 
