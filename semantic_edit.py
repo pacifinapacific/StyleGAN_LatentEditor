@@ -79,7 +79,7 @@ def make_morph(boundary,i,latents_0,g_synthesis,semantic):
         latent_code=latent_code.to(torch.float)
 
         with torch.no_grad():
-                synth_img=g_synthesis(latent_code)
+            synth_img=g_synthesis(latent_code)
         synth_img = (synth_img + 1.0) / 2.0
 
         save_image(synth_img,"save_image/boundary/{}.png".format(semantic[i]))
