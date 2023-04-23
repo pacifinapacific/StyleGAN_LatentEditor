@@ -1,0 +1,25 @@
+name: ganasprior
+channels:
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.7
+  - numpy
+  - scikit-image
+  - tqdm
+  - ipykernel
+  - matplotlib 
+  - tensorboard 
+  - jupyter
+  - pandas
+  - tensorflow-gpu=1.14
+  - Cython
+  - pip:
+    - --extra-index-url https://download.pytorch.org/whl/cu113
+    - scikit-image
+    - torch==1.12.1+cu113 
+    - torchvision==0.13.1+cu113 
+    - pytorch-ssim==0.1
+    - opencv-python==4.5.1.48
+    # - torch==1.4.0
+    # - torchvision==0.5.0

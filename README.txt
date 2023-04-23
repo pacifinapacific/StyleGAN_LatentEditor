@@ -31,3 +31,8 @@ See ipynb file for execution method
 See the following qiita article for details
 
 https://qiita.com/pacifinapacific/items/1d6cca0ff4060e12d336
+
+# Run Guide:
+- To Link the libstdc++.6.so file to current enviorment
+    export LD_LIBRARY_PATH=/home/kaushikk/miniconda3/envs/VSR/lib/
+- Run weight_convetor.py to convert the tensorflow weights to pytorch weights
